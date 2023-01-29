@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/gato.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paprika&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+  </head>
+  <body class="font-Paprika h-screen p-4">
+    <div class="container mx-auto">
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    background: rgb(242, 215, 217);
+    background: linear-gradient(
+      180deg,
+      rgba(242, 215, 217, 1) 0%,
+      rgba(211, 206, 223, 1) 33%,
+      rgba(156, 180, 204, 1) 69%,
+      rgba(116, 141, 166, 1) 100%
+    );
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      --tw-bg-opacity: 1;
+      background: rgb(32, 32, 64);
+      background: linear-gradient(
+        180deg,
+        rgba(32, 32, 64, 1) 0%,
+        rgba(32, 32, 96, 1) 35%,
+        rgba(96, 32, 128, 1) 74%,
+        rgba(176, 48, 176, 1) 100%
+      );
+    }
+  }
+</style>

@@ -1,0 +1,17 @@
+---
+export interface Props {
+  link: string;
+
+}
+
+const { link } = Astro.props;
+---
+<a href={link} class="flex">
+<button
+  class="rounded-xl w-full flex gap-2 items-center justify-center dark:bg-black dark:hover:bg-neutral-900 dark:border-gray-800 dark:text-gray-300 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 shadow "
+  >
+
+  <slot />
+
+</button>
+</a>

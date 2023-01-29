@@ -1,0 +1,25 @@
+{
+  "name": "leenaiden-web",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "f": "prettier -w --plugin-search-dir=. .    ",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.0.0",
+    "astro": "^2.0.2",
+    "gh-pages": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "2.8.3",
+    "prettier-plugin-astro": "^0.8.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
