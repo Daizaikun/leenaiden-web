@@ -1,12 +1,13 @@
 ---
 export interface Props {
   link: string;
+  description: string;
 }
 
-const { link } = Astro.props;
+const { link, description } = Astro.props;
 ---
 
-<a href={link} class="flex">
+<a href={link} class="flex" aria-label={description} >
   <button
     class="hover:-translate-y-0.5  flex w-full items-center justify-center gap-2 rounded-xl border border-gray-400 bg-white py-2 px-4 font-semibold text-gray-800 shadow hover:bg-gray-100 dark:border-gray-800 dark:bg-black dark:text-gray-300 dark:hover:bg-neutral-900"
   >

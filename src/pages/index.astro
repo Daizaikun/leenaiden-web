@@ -9,17 +9,18 @@ import QR from "@/components/Icons/QR.astro";
     <div class="mt-6 flex flex-col items-center justify-center gap-12 sm:mt-12">
       <div
         class="group rounded-full bg-white shadow-2xl ring-2 ring-offset-4 ring-offset-slate-50 backdrop-sepia-0 dark:bg-black dark:ring-purple-500 dark:ring-offset-slate-900"
-      >
+        aria-label="Presentacion de leenaiden"
+        >
         <!-- dark:border-stone-900 border-slate-200 border-2 -->
         <img
-          class="group-hover:hidden rounded-full transition hover:transition-all w-36 sm:w-52"
-          src="/leenaiden.png"
-          alt=""
+          class="group-hover:hidden rounded-full transition hover:transition-all w-36 sm:w-52 h-36 sm:h-52"
+          src="/leenaiden.webp"
+          alt="Foto de leenaiden"
         />
-        <div class="hidden group-hover:block"><QR/></div>
+        <div aria-label="QR de leenaiden" class="hidden group-hover:block"><QR/></div>
         
       </div>
-      <div class="text-3xl">
+      <div class="text-3xl" aria-label="Redes sociales de leenaiden" >
         <strong>
           <h1
             class="principal text-3xl text-neutral-900 shadow-2xl shadow-zinc-300 dark:text-gray-300 dark:shadow-slate-700"
