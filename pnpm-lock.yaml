@@ -3,7 +3,6 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/tailwind': ^3.0.0
   '@fontsource/paprika': 4.5.11
-  '@vercel/analytics': ^0.1.8
   astro: ^2.0.2
   gh-pages: ^5.0.0
   prettier: 2.8.3
@@ -14,7 +13,6 @@ specifiers:
 dependencies:
   '@astrojs/tailwind': 3.0.0_uhsc6pehih5huiqhsy5i7sy5um
   '@fontsource/paprika': 4.5.11
-  '@vercel/analytics': 0.1.8
   astro: 2.0.2
   gh-pages: 5.0.0
 
@@ -732,12 +730,6 @@ packages:
 
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
-    dev: false
-
-  /@vercel/analytics/0.1.8:
-    resolution: {integrity: sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ==}
-    peerDependencies:
-      react: ^16.8||^17||^18
     dev: false
 
   /@vscode/emmet-helper/2.8.6:
