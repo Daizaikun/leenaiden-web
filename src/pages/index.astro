@@ -1,18 +1,38 @@
 ---
 import Buttons from "@/components/Buttons.astro";
 import Layout from "../layouts/Layout.astro";
+import QR from "@/components/Icons/QR.astro";
 ---
 
 <Layout title="Leenaiden Web">
-  <div class="grid grid-rows-2 gap-36">
-    <div class="flex justify-center items-center mt-12">
+  <div class="grid grid-rows-2 gap-10 sm:gap-28">
+    <div class="mt-6 flex flex-col items-center justify-center gap-12 sm:mt-12">
       <div
-        class="bg-white dark:bg-black dark:border-stone-900 p-2 br rounded-full shadow-2xl border-slate-200 border-2"
+        class="group rounded-full bg-white shadow-2xl ring-2 ring-offset-4 ring-offset-slate-50 backdrop-sepia-0 dark:bg-black dark:ring-purple-500 dark:ring-offset-slate-900"
       >
-        <img class="rounded-full w-52" src="/leenaiden.png" alt="" />
+        <!-- dark:border-stone-900 border-slate-200 border-2 -->
+        <img
+          class="group-hover:hidden rounded-full transition hover:transition-all w-36 sm:w-52"
+          src="/leenaiden.png"
+          alt=""
+        />
+        <div class="hidden group-hover:block"><QR/></div>
+        
+      </div>
+      <div class="text-3xl">
+        <strong>
+          <h1
+            class="principal text-3xl text-neutral-900 shadow-2xl shadow-zinc-300 dark:text-gray-300 dark:shadow-slate-700"
+          >
+            Leenaiden
+          </h1>
+        </strong>
       </div>
     </div>
 
-    <div><Buttons /></div>
+    <div>
+      <Buttons />
+    </div>
   </div>
 </Layout>
+
